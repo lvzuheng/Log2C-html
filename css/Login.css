@@ -1,0 +1,12 @@
+
+body{
+	background-color: #F6F6F6;
+}
+
+.form-input{
+	min-width: 150px;
+	/*max-width: 360px;*/
+}
+.address-input{
+	min-width: 80px;
+}

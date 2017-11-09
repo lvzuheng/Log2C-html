@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel="stylesheet" href="css/bootstrap.css" />
+	<link rel="stylesheet" href="css/Login.css" />
+
+	<!--<script type="text/javascript" src="js/server/config.js" ></script>-->
+	<script type="text/javascript" src="js/server/login.js"></script>
+	<script type="text/javascript" src="js/jquery/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/utils/CookieUtil.js"></script>
+	<script type="text/javascript" src="js/jquery/jQuery.md5.js"></script>
+	<script type="text/javascript" src="js/jquery/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/bootstrap/bootstrap.js"></script>
+
+	<body onload="init()">
+		<div id="div_frame" class="col-lg-12 col-xs-12 col-md-12 col-sm-12">
+			<div class="col-lg-12 col-xs-12 col-md-12 col-sm-12 text-center" style="margin-bottom: 10%;">
+				<h3><strong>执法仪管理系统登录界面</strong></h3>
+			</div>
+			<div class="col-lg-6 col-xs-12 col-md-6 col-sm-8  col-lg-offset-3  col-md-offset-3 col-sm-offset-2 " style="padding: 0;">
+				<p style="color:royalblue ; font-size: 20px;"><strong>登录</strong></p>
+				<div>
+					<div class="input-group col-xs-6 col-sm-7" style="padding: 0; float: left;">
+						<span class="input-group-addon">地址</span>
+						<input id="login_ip" type="text" class="form-control address-input" placeholder="请输入ip地址" value="127.0.0.1">
+					</div>
+					<div class="input-group col-xs-6 col-sm-5 ">
+						<span class="input-group-addon">端口</span>
+						<input id="login_port" type="text" class="form-control address-input" placeholder="请输入端口" value="1100">
+					</div>
+					<br />
+				</div>
+				<div class="input-group">
+					<span class="input-group-addon">用户</span>
+					<input id="login_username" type="text" class="form-control form-input" placeholder="请输入用户名" value="lzh">
+					<span id="login_username_tips" class="input-group-addon" style="display: none;">用户</span>
+				</div>
+				<br />
+				<div class="input-group">
+					<span class="input-group-addon">密码</span>
+					<input id="login_password" class="form-control form-input" type="password" placeholder="请输入密码" value="123456" />
+					<span id="login_password_tips" class="input-group-addon" style="display: none;">用户</span>
+				</div>
+				<br />
+				<button class="btn btn-primary col-lg-offset-12 col-xs-offset-10  col-lg-offset-10 col-sm-offset-10 col-md-offset-10" onclick="login_event()">确认</button>
+				<!--</div>-->
+			</div>
+			<footer class="col-lg-12 col-xs-12 col-md-12 col-sm-12" style="margin-top: 35%; max-height: 400px;">
+				<div class="col-lg-10 col-xs-10 col-md-10 col-sm-10 col-xs-offset-1 text-center">
+					<a href="" style="margin: 0 auto; color: teal;">关于我们</a>
+				</div>
+			</footer>
+		</div>
+	</body>
+
+</html>

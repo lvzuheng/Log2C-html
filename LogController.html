@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<link rel="stylesheet" href="css/bootstrap.css" />
+	<link rel="stylesheet" href="css/LogController.css" />
+	<!--<script type="text/javascript" src="js/server/config.js" ></script>-->
+	<script type="text/javascript" src="js/server/logcontroller.js"></script>
+	<script type="text/javascript" src="js/jquery/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/utils/CookieUtil.js"></script>
+	<script type="text/javascript" src="js/jquery/jQuery.md5.js"></script>
+	<script type="text/javascript" src="js/jquery/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/bootstrap/bootstrap.js"></script>
+	<script type="text/javascript" src="js/action/action.js"></script>
+	<script type="text/javascript" src="js/action/handler.js" ></script>
+	<script type="text/javascript" src="js/dialog/dialog.js" ></script>
+
+	<body onload="init()" onbeforeunload="stopHtml()">
+		<div id="div_body" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 div-body">
+			<div id="div_top" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div id="div_title" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+					消息监听界面
+				</div>
+				<div id="div_index" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+					<div id="div_control" class="col-xs-4 col-sm-4 col-md-4 col-lg-4 div-control">
+						<button id="btn_start" class="btn btn-primary" onclick="startEvent()"> 开始</button>
+						<button id="btn_stop" class="btn btn-primary" onclick="stopEvent()">停止</button>
+					</div>
+				</div>
+			</div>
+			<div id="div_mid" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center div-mid" >
+				<div id="div_infosbody" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center div-mid" >
+					<textarea id="textarea_infos" class="col-xs-12 col-sm-12 col-md-12 col-lg-12"></textarea>
+				</div>
+			</div>
+			<div id="div_bottom"></div>
+		</div>
+	</body>
+
+</html>
